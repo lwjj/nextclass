@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/createNewUser/createNewUser",
     "pages/index/index",
     "pages/createUser2/createUser2",
     "pages/createUser/createUser",
