@@ -1,0 +1,54 @@
+<!--pages/user/user.wxml-->
+<view class='user'>
+  <view class='top' wx:if='{{userInfo}}'>
+    <view class='pic'>
+      <image src='{{userInfo.avatarUrl}}'></image>
+      <text>{{userInfo.nickName}}</text>
+    </view>
+  </view>
+   <view class='top' wx:else>
+    <view class='pic'>
+      <image src='/images/p2.jpg'></image>
+    </view>
+    <view class='nologin'>
+          <view bindtap='showDialogBtn2'>点击登录</view>
+          <view class='more'>登录后可解锁更多内容</view>
+    </view>
+  </view>
+  <view class='center'>
+    <view class='item'>
+      <text>订单</text>
+      <text class='right'>></text>
+    </view>
+    <view class='item'>
+      <text>权限</text>
+      <text class='right'>></text>
+    </view>
+    <view class='item'>
+      <text>收藏</text>
+      <text class='right'>></text>
+    </view>
+    <view class='item'>
+      <text>设置</text>
+      <text class='right'>></text>
+    </view>
+    <view class='item'>
+      <text>关于我们</text>
+      <text class='right'>></text>
+    </view>
+  </view>
+
+   <!--弹窗2-->
+<view class="modal-mask" bindtap="hideModal2" catchtouchmove="preventTouchMove" wx:if="{{showModal2}}"></view>
+<view class="modal-dialog" wx:if="{{showModal2}}">
+  <view class="modal-title modal-title2">登录或注册未来教室</view>
+  <text class='close' bindtap='hideDialog'>X</text>
+  <view class="modal-content">
+     <view class='btn2'>
+       <button type='primary' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信账号快速登录</button>
+       <button>手机号注册/登录</button>
+    </view>
+   
+  </view>
+</view>
+</view>

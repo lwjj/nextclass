@@ -1,0 +1,52 @@
+/* pages/createUser2/createUser2.wxss */
+/* pages/createUser/createUser.wxss */
+.createUser{
+  padding: 0 50rpx;
+}
+.step{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 50rpx auto;
+}
+.num{
+  width: 80rpx;
+  height: 80rpx;
+  background:#07ce07;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 80rpx;
+}
+.line{
+  color:#07ce07;
+}
+.nextStep{
+  text-align: center;
+  color:#07ce07;
+  padding-top: 400rpx;
+}
+.form{
+  padding-top: 150rpx;
+  font-size: 14px;
+}
+.item{
+  display: flex;
+  padding-bottom: 50rpx;
+}
+.item .item_left{
+  color:#999;
+  text-align: right;
+  width: 25%;
+  padding-right: 40rpx;
+
+}
+.item view:nth-of-type(2){
+  width: 78%;
+}
+.radio-group{
+  display: flex;
+  justify-content: space-between;
+  
+}

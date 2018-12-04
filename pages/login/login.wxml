@@ -1,0 +1,6 @@
+<!--pages/login/login.wxml-->
+<view class='login'>
+  <image src='/images/logo1.png'></image>
+  <view class='welcome'>欢迎来到未来教室</view>
+  <button type='primary'>激活设备</button>
+</view>

@@ -1,0 +1,61 @@
+/* pages/createUser/createUser.wxss */
+.createUser{
+
+}
+.step{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 44%;
+  margin: 50rpx auto;
+}
+.num{
+  width: 80rpx;
+  height: 80rpx;
+  background:#07ce07;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  line-height: 80rpx;
+}
+.line{
+  color:#999;
+}
+.num2{
+  color:#999;
+  background: #eee;
+}
+.headPic{
+  text-align: center;
+  padding-top: 100rpx;
+}
+.headPic image{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.headPic view{
+  color:#666;
+  font-size: 14px;
+  padding-top: 20rpx;
+}
+.nickname{
+  width: 70%;
+  margin: 200rpx auto;
+  border-bottom: 1px solid #999;
+  display: flex;
+  align-items: center;
+}
+.nickname input{
+  font-size: 14px;
+  padding-bottom: 3px;
+  width: 95%;
+}
+.nickname text{
+  float: right;
+  color:red;
+}
+.nextStep{
+  text-align: center;
+  color:#07ce07;
+}

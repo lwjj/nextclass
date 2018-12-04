@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="home">
+<view>dfdfdfd{{showModal2}}</view>
+  <!--弹窗-->
+<view class="modal-mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">激活设备</view>
+  <view class="modal-content">
+    <view class="modal-input-item scale">
+     <image src='/images/ph1.png' mode='widthFix'></image>
+     <input type='text' placeholder='请输入11位手机号'></input>
+    </view>
+    <view class="modal-input-item modal-input-item2 scale">
+     <image src='/images/a1.png' mode='widthFix'></image>
+     <input type='text' placeholder='请输入验证码'></input>
+     <view class='code'>获取验证码</view>
+     
+    </view>
+   
+  </view>
+  <view class='btn'>
+       <button bindtap='showDialogBtn2'>激活</button>
+       <text>手机号绑定设备</text>
+    </view>
+</view>
+ <!--弹窗2-->
+<view class="modal-mask" bindtap="hideModal2" catchtouchmove="preventTouchMove" wx:if="{{showModal2}}"></view>
+<view class="modal-dialog" wx:if="{{showModal2}}">
+  <view class="modal-title modal-title2">仅需2步，为您的小孩和家人建立自己的账号吧</view>
+  <view class="modal-content">
+     <view class='btn2'>
+       <button type='primary' bindtap='toCreateAccount'>创建成员账号</button>
+       <button bindtap='showDialogBtn2'>在学习电脑中创建</button>
+    </view>
+   
+  </view>
+</view>
+</view>

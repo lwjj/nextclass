@@ -1,0 +1,37 @@
+<!--pages/createUser2/createUser2.wxml-->
+<!--pages/createUser/createUser.wxml-->
+
+<view class='createUser'>
+    <view class='step'>
+        <view class='num num1'>1</view>
+        <view class='line'>-------</view>
+        <view class='num num2'>2</view>
+    </view>
+   <view class='form'>
+      <view class='item'>
+           <view class='item_left'>宝宝性别：</view>
+           <view>
+                <radio-group class="radio-group" bindchange="radioChange">
+                  <label class="radio" wx:for="{{items}}">
+                    <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+                  </label>
+                </radio-group>
+           </view>
+      </view>
+      <view class='item'>
+           <view class='item_left'>出生日期：</view>
+           <view>
+              <picker mode="date" value="{{date}}"  bindchange="bindDateChange" end="{{year}}-{{month}}-{{date}}">
+              <view class="picker" >
+                 {{time}}
+              </view>
+              </picker>
+           </view>
+      </view>
+      <view class='item'>
+           <view class='item_left'>年龄：</view>
+           <view>20</view>
+      </view>
+   </view>
+    <view class='nextStep'>完成</view>
+</view>

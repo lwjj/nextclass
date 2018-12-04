@@ -1,0 +1,18 @@
+<!--pages/createUser/createUser.wxml-->
+
+<view class='createUser'>
+    <view class='step'>
+        <view class='num num1'>1</view>
+        <view class='line'>-------</view>
+        <view class='num num2'>2</view>
+    </view>
+    <view class='headPic'>
+        <image src='{{headImg}}'></image>
+        <view bindtap='chooseImageTap'>编辑头像</view>
+    </view>
+    <view class='nickname'>
+        <input class='text' placeholder='昵称'></input>
+        <text>*</text>
+    </view>
+    <view class='nextStep' bindtap='toNextStep'>下一步</view>
+</view>
